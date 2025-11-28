@@ -11,7 +11,7 @@ class ChirperController extends Controller
      */
     public function index()
     {
-        $shirps = [
+        $chirps = [
             [
                 'author' => 'Jane Doe',
                 'message' => 'Just deployed my first Laravel app! 🚀',
@@ -29,7 +29,7 @@ class ChirperController extends Controller
             ]
         ];
 
-        return view('home', compact('ships'));
+        return view('home', compact('chirps'));
 
     }
 
