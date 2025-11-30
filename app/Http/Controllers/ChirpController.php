@@ -89,6 +89,11 @@ class ChirpController extends Controller
 
     public function destroy(Chirp $chirp)
     {
+
+        // if ($request->user()->cannot('update', $chirp)) {
+        //     abort(403);
+        // }
+
         $chirp->delete();
 
         return redirect('/')->with('success', 'Chirp deleted!');
