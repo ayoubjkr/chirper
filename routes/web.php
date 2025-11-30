@@ -8,3 +8,4 @@ use App\Http\Controllers\ChirpController;
 // })->name('home');
 
 Route::get('/', [ChirpController::class, 'index'] )->name('home');
+Route::get('/chirps', [ChirpController::class, 'store'])->name('store');
